@@ -46,6 +46,7 @@ Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analiz
 - Creo un array con le immagini 
 **FIN TANTO CHE** ho delle immagini nell'array      
   - le inserisco nel DOM
+- Mostro la prima immagine 
 **QUANDO** clicco sulla freccia di destra 
   **SE** l'immagine visualizzata è la l'ultima dell'array
     - Nascondo l'immagine visulizzata
