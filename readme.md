@@ -48,22 +48,16 @@ Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analiz
   - le inserisco nel DOM
 - Mostro la prima immagine 
 **QUANDO** clicco sulla freccia di destra 
-  **SE** l'immagine visualizzata è la l'ultima dell'array
-    - Nascondo l'immagine visulizzata
-    - Seleziono la prima immagine dell'array
-    - Mostro l'immagine selezionata
-  **ALTRIMENTI**
     - Nascondo l'immagine visulizzata
     - Avanzo di un'immagine
+    **SE** l'immagine selezionata è la l'ultima dell'array
+      - Seleziono la prima immagine dell'array
     - Mostro l'immagine selezionata
 **QUANDO** clicco sulla freccia di sinistra
-  **SE** l'immagine visualizzata è la prima dell'array
     - Nascondo l'immagine visulizzata
-    - Seleziono l'ultimas immagine dell'array
-    - Mostro l'immagine 
-  **ALTRIMENTI**
-    - Nascondo l'immagine visulizzata
-    - Retrocede di un'immagine 
+    - Retrocedo di un'immagine 
+    **SE** l'immagine selezionata è la prima dell'array
+      - Seleziono l'ultimas immagine dell'array
     - Mostro l'immagine selezionata
 
 

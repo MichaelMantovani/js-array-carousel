@@ -8,6 +8,7 @@ const prev = document.getElementById('prev');
 
 // Creo un array con le immagini 
 const imagesGallery = ['img/01.webp' , 'img/02.webp' , 'img/03.webp' , 'img/04.webp' , 'img/05.webp'];
+console.log(imagesGallery)
 
 
 // Inserisco le immagini nel DOM
@@ -26,3 +27,21 @@ const images = document.querySelectorAll('#gallery img')
 let currentIndex = 0;
 
 images[currentIndex].classList.add('active');
+
+// Quando clicclo sulla freccia destra scorro le immagini verso destra
+next.addEventListener('click', function(){
+
+  // Nascondo l'immagine visulizzata
+  images[currentIndex].classList.remove('active');
+  
+  
+  currentIndex++;
+
+  if(currentIndex === images.length) currentIndex = 0;
+            
+  
+  images[currentIndex].classList.add('active');
+  
+  
+})
+
