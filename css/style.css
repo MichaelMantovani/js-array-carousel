@@ -18,7 +18,6 @@
     }
 
     #gallery{
-      border: 2px solid black;
       width: 100%;
       height: 700px;
       margin-top: 4rem;
@@ -28,6 +27,11 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: none;
+    }
+
+    #gallery .active{
+      display: block;
     }
 
 
