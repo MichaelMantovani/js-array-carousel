@@ -17,14 +17,14 @@
       position: relative;
     }
 
-    .gallery{
+    #gallery{
       border: 2px solid black;
       width: 100%;
       height: 700px;
       margin-top: 4rem;
     }
 
-    .gallery img{
+    #gallery img{
       width: 100%;
       height: 100%;
       object-fit: cover;
