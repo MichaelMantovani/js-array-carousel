@@ -17,6 +17,7 @@ let imagesElement = ''
 for (i = 0; i < imagesGallery.length; i++) {
   imagesElement += `<img src="${imagesGallery[i]}" alt="Pictures ${i + 1}">`
 }
+
 gallery.innerHTML = imagesElement
 
 
@@ -28,20 +29,24 @@ let currentIndex = 0;
 
 images[currentIndex].classList.add('active');
 
-// Quando clicclo sulla freccia destra scorro le immagini verso destra
+// Quando clicco sulla freccia destra scorro le immagini verso destra
 next.addEventListener('click', function(){
 
   // Nascondo l'immagine visulizzata
   images[currentIndex].classList.remove('active');
   
-  
+  // Avanzo di un'immagine
   currentIndex++;
 
+  // SE l'immagine selezionata è la l'ultima seleziono la prima immagine dell'array
   if(currentIndex === images.length) currentIndex = 0;
             
-  
+  // Mostro l'immagine selezionata
   images[currentIndex].classList.add('active');
   
   
 })
+
+
+
 
