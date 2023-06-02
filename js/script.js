@@ -4,6 +4,7 @@ console.log('JS OK')
 // Recupero gli elementi dal DOM
 const gallery = document.getElementById('gallery');
 const thumbnail = document.getElementById('thumbnail')
+const next = document.getElementById('next')
 const prev = document.getElementById('prev');
 
 
@@ -26,12 +27,16 @@ thumbnail.innerHTML = imagesElement
 
 // Mostro la prima 
 const images = document.querySelectorAll('#gallery img')
+const thumbnailImages = document.querySelectorAll('#thumbnail img')
 
 
 
 let currentIndex = 0;
 
 images[currentIndex].classList.add('active');
+thumbnailImages[currentIndex].classList.add('thumbnail-active');
+
+
 
 
 
@@ -42,15 +47,21 @@ next.addEventListener('click', function(){
 
   // Nascondo l'immagine visulizzata
   images[currentIndex].classList.remove('active');
+
+  // Rendo opaca l'immagine nella thumbnail
+  thumbnailImages[currentIndex].classList.remove('thumbnail-active');
+  
   
   // Avanzo di un'immagine
   currentIndex++;
+
 
   // SE l'immagine selezionata è la l'ultima seleziono la prima immagine dell'array
   if(currentIndex === images.length) currentIndex = 0;
             
   // Mostro l'immagine selezionata
   images[currentIndex].classList.add('active');
+  thumbnailImages[currentIndex].classList.add('thumbnail-active');
   
   
 })
@@ -62,6 +73,11 @@ prev.addEventListener('click', function(){
 
   // Nascondo l'immagine visulizzata
   images[currentIndex].classList.remove('active');
+
+  // Rendo opaca l'immagine nella thumbnail
+  thumbnailImages[currentIndex].classList.remove('thumbnail-active');
+
+
   
   // Retrocedo di un'immagine
   currentIndex--;
@@ -73,6 +89,7 @@ prev.addEventListener('click', function(){
             
   // Mostro l'immagine selezionata
   images[currentIndex].classList.add('active');
+  thumbnailImages[currentIndex].classList.add('thumbnail-active');
   
   
   
