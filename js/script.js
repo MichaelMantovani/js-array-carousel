@@ -3,8 +3,9 @@ console.log('JS OK')
 
 // Recupero gli elementi dal DOM
 const gallery = document.getElementById('gallery');
-const next = document.getElementById('next');
+const thumbnail = document.getElementById('thumbnail')
 const prev = document.getElementById('prev');
+
 
 // Creo un array con le immagini 
 const imagesGallery = ['img/01.webp' , 'img/02.webp' , 'img/03.webp' , 'img/04.webp' , 'img/05.webp'];
@@ -19,6 +20,7 @@ for (i = 0; i < imagesGallery.length; i++) {
 }
 
 gallery.innerHTML = imagesElement
+thumbnail.innerHTML = imagesElement
 
 
 
