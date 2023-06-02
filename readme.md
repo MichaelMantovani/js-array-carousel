@@ -41,20 +41,23 @@ Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analiz
 
 **SVOLGIMENTO TRACCIA**
 
-- Creo il markup statico
+- Creo il markup statico delle immagini
+- Creo il markup statico delle thumbnail
 - Recupero gli elementi dal DOM
-- Creo un array con le immagini 
+- Creo un array con le immagini
 **FIN TANTO CHE** ho delle immagini nell'array      
   - le inserisco nel DOM
 - Mostro la prima immagine 
 **QUANDO** clicco sulla freccia di destra 
-    - Nascondo l'immagine visulizzata
-    - Avanzo di un'immagine
+    - Nascondo l'immagine visualizzata
+    - Rendo opaca l'immagine nella thumbnail
+    - Avanzo di un'immagine 
     **SE** l'immagine selezionata è la l'ultima dell'array
       - Seleziono la prima immagine dell'array
     - Mostro l'immagine selezionata
 **QUANDO** clicco sulla freccia di sinistra
     - Nascondo l'immagine visulizzata
+    - Rendo opaca l'immagine nella thumbnail
     - Retrocedo di un'immagine 
     **SE** l'immagine selezionata è la prima dell'array
       - Seleziono l'ultimas immagine dell'array
