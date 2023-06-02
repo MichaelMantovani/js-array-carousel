@@ -25,9 +25,15 @@ gallery.innerHTML = imagesElement
 // Mostro la prima 
 const images = document.querySelectorAll('#gallery img')
 
+
+
 let currentIndex = 0;
 
 images[currentIndex].classList.add('active');
+
+
+
+
 
 // Quando clicco sulla freccia destra scorro le immagini verso destra
 next.addEventListener('click', function(){
@@ -43,6 +49,29 @@ next.addEventListener('click', function(){
             
   // Mostro l'immagine selezionata
   images[currentIndex].classList.add('active');
+  
+  
+})
+
+
+
+// Quando clicco sulla freccia sinistra scorro le immagini verso sinistra
+prev.addEventListener('click', function(){
+
+  // Nascondo l'immagine visulizzata
+  images[currentIndex].classList.remove('active');
+  
+  // Retrocedo di un'immagine
+  currentIndex--;
+
+
+  // SE l'immagine selezionata è la prima seleziono l'ultima immagine dell'array
+  if(currentIndex < 0) currentIndex = (images.length - 1);
+  
+            
+  // Mostro l'immagine selezionata
+  images[currentIndex].classList.add('active');
+  
   
   
 })
